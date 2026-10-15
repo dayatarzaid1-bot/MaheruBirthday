@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#fff0f5">
+<title>Happy Birthday, Mahera ♡</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+<style>
+:root{--pink:#f7c9d8;--rose:#c65379;--deep:#71344f;--ink:#422b37;--cream:#fff9f8;--muted:#8d6c7b}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:"DM Sans",sans-serif;overflow-x:hidden}
+a{color:inherit}
+.wrap{width:min(1100px,91%);margin:auto}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0;font-size:.83rem;letter-spacing:.08em;color:var(--deep)}
+.logo{font-family:"Playfair Display",serif;font-size:1.15rem;font-style:italic;letter-spacing:0}
+.nav span:last-child{opacity:.7}
+.hero{min-height:84vh;display:grid;grid-template-columns:1.03fr .97fr;align-items:center;gap:clamp(28px,6vw,80px);padding:48px 0 80px}
+.eyebrow{color:var(--rose);font-size:.75rem;letter-spacing:.22em;text-transform:uppercase;font-weight:600}
+h1,h2,h3,p{margin-top:0}
+h1{font-family:"Playfair Display",serif;font-size:clamp(3.4rem,8vw,7rem);line-height:.98;letter-spacing:-.055em;font-weight:500;margin:20px 0}
+h1 em{color:var(--rose);font-weight:500}
+.hero-copy p{max-width:450px;line-height:1.85;color:var(--muted);font-size:1rem}
+.cta{display:inline-flex;align-items:center;gap:10px;background:var(--deep);color:white;text-decoration:none;padding:15px 22px;border-radius:100px;margin-top:18px;font-size:.88rem;transition:transform .25s,background .25s}
+.cta:hover{transform:translateY(-3px);background:var(--rose)}
+.hero-art{position:relative;max-width:470px;margin:auto;width:100%;padding:20px}
+.photo-frame{background:white;padding:12px 12px 52px;box-shadow:0 22px 70px #6b354019;transform:rotate(3deg);position:relative;z-index:2}
+.photo-frame img{display:block;width:100%;height:clamp(330px,45vw,510px);object-fit:cover}
+.photo-caption{position:absolute;bottom:17px;left:0;right:0;text-align:center;font-family:"Playfair Display",serif;font-style:italic;color:var(--deep);font-size:1.15rem}
+.orbit{position:absolute;border:1px solid #e7a8bd;border-radius:50%;inset:0;transform:rotate(-13deg) scale(1.06)}
+.sticker{position:absolute;z-index:3;right:-5px;top:7%;background:#fff;border-radius:50%;width:95px;height:95px;display:grid;place-items:center;text-align:center;font-family:"Playfair Display",serif;color:var(--rose);font-size:1.05rem;line-height:1.2;box-shadow:0 8px 30px #71344f18;transform:rotate(10deg)}
+.spark{position:absolute;color:var(--rose);font-size:2rem;z-index:3}
+.spark.one{left:-3px;top:18%}.spark.two{right:3%;bottom:5%;font-size:1.6rem}
+.section{padding:85px 0}
+.section-head{text-align:center;max-width:620px;margin:0 auto 38px}
+h2{font-family:"Playfair Display",serif;font-size:clamp(2.25rem,5vw,3.8rem);font-weight:500;letter-spacing:-.04em;margin:13px 0}
+.section-head p{color:var(--muted);line-height:1.8}
+.gallery{display:grid;grid-template-columns:1fr 1.15fr 1fr;gap:18px;align-items:center}
+.gallery figure{margin:0;background:white;padding:9px 9px 17px;box-shadow:0 12px 40px #71344f0c}
+.gallery figure:nth-child(1){transform:rotate(-3deg)}.gallery figure:nth-child(2){transform:translateY(-18px) rotate(1deg)}.gallery figure:nth-child(3){transform:rotate(3deg)}
+.gallery img{width:100%;height:clamp(190px,28vw,330px);object-fit:cover;display:block}
+.gallery figcaption{font-family:"Playfair Display",serif;text-align:center;padding-top:13px;color:var(--deep);font-style:italic}
+.note{background:#fce6ed;border-radius:28px;padding:clamp(28px,6vw,65px);text-align:center;position:relative;overflow:hidden}
+.note:before,.note:after{content:"♡";position:absolute;font-family:serif;color:#e8a6bd66;font-size:7rem}
+.note:before{left:10px;top:-24px}.note:after{right:10px;bottom:-42px}
+.note-inner{max-width:690px;margin:auto;position:relative;z-index:1}
+.note h2{color:var(--deep)}
+.note p{font-family:"Playfair Display",serif;font-size:clamp(1.12rem,2.4vw,1.45rem);line-height:1.9;color:#805568}
+.signature{font-family:"Playfair Display",serif;font-style:italic;font-size:1.45rem;color:var(--rose);margin-top:20px}
+.final{padding:80px 0 65px;text-align:center}
+.final .heart{font-size:2.2rem;animation:beat 1.6s infinite;display:inline-block}
+.final p{color:var(--muted);line-height:1.8}
+footer{text-align:center;padding:20px 0 35px;font-size:.76rem;color:#a58392}
+.floating{position:fixed;pointer-events:none;z-index:10;bottom:-30px;animation:floatUp 6s linear forwards;color:#d86f96}
+@keyframes floatUp{to{transform:translateY(-110vh) rotate(35deg);opacity:0}}
+@keyframes beat{0%,100%{transform:scale(1)}50%{transform:scale(1.16)}}
+@media(max-width:720px){.nav{padding:18px 0}.hero{grid-template-columns:1fr;padding:40px 0 60px;gap:30px;min-height:auto}.hero-copy{text-align:center}.hero-copy p{margin-left:auto;margin-right:auto}.hero-art{width:min(90%,400px)}.photo-frame img{height:390px}.section{padding:62px 0}.gallery{grid-template-columns:1fr 1fr;gap:12px}.gallery figure:nth-child(2){transform:rotate(2deg)}.gallery figure:nth-child(3){display:none}.gallery img{height:230px}.sticker{width:78px;height:78px;font-size:.9rem}}
+@media(max-width:390px){h1{font-size:3.25rem}.photo-frame img{height:340px}.gallery img{height:185px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<header class="wrap nav"><div class="logo">for Mahera ♡</div><span>OCTOBER 16 · YOUR DAY</span></header>
+<main>
+<section class="wrap hero">
+  <div class="hero-copy">
+    <div class="eyebrow">A little page, made with love</div>
+    <h1>Happy<br>Birthday,<br><em>Mahera.</em></h1>
+    <p>To my favourite person in this entire world, you have no idea how much happiness you bring into my life just by being you. If I could wish for one thing today, it would be to be right beside you, holding your hand and seeing that beautiful smile of yours. Until that day comes, I hope these little words remind you that no distance could ever change what you mean to me. Happy birthday, my Mahera. You will always have a special place in my heart. ♡</p>
+    <a class="cta" href="#your-note">A little message for you <span>♡</span></a>
+  </div>
+  <div class="hero-art">
+    <div class="orbit"></div><div class="spark one">✦</div><div class="spark two">✧</div>
+    <div class="sticker">My Favourite<br>Person ♡</div>
+    <div class="photo-frame">
+      <img src="mahera1.jpeg" alt="A happy memory placeholder — replace with Mahera's photo">
+      <div class="photo-caption">My Princess</div>
+    </div>
+  </div>
+</section>
+<section class="section" style="background:#fff3f6">
+  <div class="wrap">
+    
+    <div class="gallery">
+      <figure><img src="mahera2.jpeg" alt="Photo placeholder 1"><figcaption>you make me smile ♡</figcaption></figure>
+      <figure><img src="mahera3.jpeg" alt="Photo placeholder 2"><figcaption>my favourite person</figcaption></figure>
+      <figure><img src="mahera4.jpg" alt="Photo placeholder 3"><figcaption>more memories, please</figcaption></figure>
+    </div>
+  </div>
+</section>
+<section class="section wrap" id="your-note">
+  <div class="note"><div class="note-inner">
+    <div class="eyebrow">from my heart to yours</div>
+    <h2>A birthday wish, just for you</h2>
+    <p>Happy birthday Maheru. I wish I could be there to see your smile today and remind you in person how special you are to me. Until I can, I hope this little corner of the internet makes you feel even a fraction of the happiness you bring into my life. May this year be gentle with your heart, full of beautiful surprises, and filled with every reason to smile. No matter the distance, you have a very special place in my heart — today and always.</p>
+    <div class="signature">always yours, Zaid ♡</div>
+  </div></div>
+</section>
+<section class="final wrap">
+  <div class="heart">♡</div>
+  <h2>Keep shining, birthday girl.</h2>
+  <p>The world is sweeter with you in it.<br>Happy birthday, Mahera. ✧</p>
+  <div class="eyebrow">made with love · just for Mahera♡</div>
+</section>
+</main>
+<script>
+(function(){
+  const symbols=["♡","✦","♥","✧"];
+  function floatHeart(){
+    const el=document.createElement("span");
+    el.className="floating";
+    el.textContent=symbols[Math.floor(Math.random()*symbols.length)];
+    el.style.left=(Math.random()*100)+"vw";
+    el.style.fontSize=(12+Math.random()*17)+"px";
+    el.style.animationDuration=(5+Math.random()*3)+"s";
+    document.body.appendChild(el);
+    setTimeout(()=>el.remove(),8500);
+  }
+  let last=0;
+  window.addEventListener("scroll",()=>{const now=Date.now();if(now-last>700){floatHeart();last=now;}},{passive:true});
+})();
+</script>
+</body>
+</html>
